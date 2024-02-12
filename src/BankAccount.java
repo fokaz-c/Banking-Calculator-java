@@ -10,7 +10,7 @@ public class BankAccount {
     }
 
     private static String createBankAccNo(){
-        return "BAC" + countAcc +"12"+countAcc*2;
+        return "24B0" + countAcc;
     }
 
     public static int getCountAcc() {
@@ -20,6 +20,7 @@ public class BankAccount {
     public void deposit(double amt){
         if (amt > 0) {
             balance += amt;
+            System.out.println("Acc No:" + accNo);
             System.out.println(amt + " deposited successfully.");
         } else {
             System.out.println("Invalid amount for deposit.");
@@ -29,6 +30,7 @@ public class BankAccount {
     public void withdraw(double amt) {
         if (amt > 0 && balance >= amt) {
             balance -= amt;
+            System.out.println("Acc No:" + accNo);
             System.out.println(amt + " withdrawn successfully.");
         } else {
             System.out.println("Insufficient balance or invalid amount for withdrawal.");
