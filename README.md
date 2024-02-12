@@ -57,7 +57,3 @@ Total accounts created: 1
 ## Contributing
 
 Contributions are welcome! Please feel free to open a pull request.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
